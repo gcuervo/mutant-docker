@@ -1,7 +1,7 @@
 # mutant-docker
 Mutant api with Docker compose
 
-## Run project
+## Running
 - docker-compose up
 
 
