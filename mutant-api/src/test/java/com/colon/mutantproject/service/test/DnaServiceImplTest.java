@@ -60,7 +60,6 @@ public class DnaServiceImplTest {
   public void testIsMutantFalse() {
     String[] dnaHuman = new String[] {"ATGCCA", "CAGTAC", "TTCTGT", "AGAAGG", "CGCCTA", "TCACTG"};
     doReturn(false).when(mutantValidatorService).isMutantGene(any(),anyInt(),anyInt(),anyInt(),anyInt());
-    //doReturn(false).when(mutantValidatorService).mutantFound(anySet());
 
     Boolean isMutant = dnaService.isMutant(dnaHuman);
     assertFalse(isMutant);
