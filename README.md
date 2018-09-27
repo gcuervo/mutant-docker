@@ -1,7 +1,8 @@
 # mutant-docker
 Mutant api with Docker compose
 
-
+## Run project
+- docker-compose up
 
 
 ### Once the services are up, the following URLs will be available
