@@ -1,6 +1,7 @@
 package com.colon.mutantproject.web.exception;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import java.time.ZoneId;
 import org.springframework.http.HttpStatus;
 
 import java.time.LocalDateTime;
@@ -14,7 +15,7 @@ public class ApiError {
     private String debugMessage;
 
     private ApiError() {
-        timestamp = LocalDateTime.now();
+        timestamp = LocalDateTime.now(ZoneId.of("America/Buenos_Aires"));
     }
 
     public ApiError(HttpStatus status) {
